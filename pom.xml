@@ -17,9 +17,11 @@
         <module>bean-scope</module>
         <module>context-aware</module>
         <module>bean-inheritance</module>
-        <module>life-cycle</module>
+        <module>bean-lifecycle</module>
         <module>bean-post-processor</module>
         <module>bean-post-processor-factory</module>
+        <module>code-to-interface</module>
+        <module>annotations</module>
     </modules>
 
     <dependencies>
