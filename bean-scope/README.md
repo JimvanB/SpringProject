@@ -16,9 +16,9 @@ There are other scopes:
 
 Scope definition is done in the bean definition. Singleon is default.
 e.g. 
-
+```
 <bean id = 'bla'  class='Triangle' scope='prototype' />
-
+```
 Singleton --> bit different than the equal singleton pattern. If a different app context is used, it will have its own bean.
 
 

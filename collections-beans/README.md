@@ -1,6 +1,6 @@
 # collection-beans
 You can use spring to initlaize collections. The way to do this is:
-
+```
  <bean id="triangle" class="Triangle">
        <property name="points">
            <list>
@@ -10,7 +10,7 @@ You can use spring to initlaize collections. The way to do this is:
            </list>
        </property>
     </bean>
-    
+```   
     
 in which points is defined in the triangle class as a list.
 The list then takes references to defined beans.

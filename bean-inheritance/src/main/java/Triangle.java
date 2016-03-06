@@ -3,21 +3,29 @@ import org.springframework.beans.factory.BeanNameAware;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 
+import java.util.List;
+
 /**
  * Created by Jim on 4-3-2016.
  */
-public class Triangle implements ApplicationContextAware, BeanNameAware {
+public class Triangle {
 
+    private List<Point> points;
     private Point pointA;
     private Point pointB;
     private Point pointC;
-    private ApplicationContext context;
-    private String beanName;
 
     public void draw(){
 
         System.out.println(getPointA() + ", " + getPointB() + ", " + getPointC());
      }
+
+    public void drawList(){
+
+        for(Point point:points){
+            System.out.println(point.getX() +", "+point.getY());
+        }
+    }
 
     public Point getPointA() {
         return pointA;
@@ -43,12 +51,11 @@ public class Triangle implements ApplicationContextAware, BeanNameAware {
         this.pointC = pointC;
     }
 
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-    this.context = applicationContext;
+    public List<Point> getPoints() {
+        return points;
     }
 
-    public void setBeanName(String name) {
-        this.beanName = name;
-        System.out.println("BeanName: "+name);
+    public void setPoints(List<Point> points) {
+        this.points = points;
     }
 }

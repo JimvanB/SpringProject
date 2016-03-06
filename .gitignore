@@ -1,10 +1,4 @@
-.idea/misc.xml
-.idea/vcs.xml
-target/classes/project1/DrawingApp.class
-target/classes/project1/Point.class
-target/classes/project1/Triangle.class
 SpringProject.iml
-.idea/uiDesigner.xml
-.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml
-.idea/workspace.xml
+target/
+.idea/
 *.iml
