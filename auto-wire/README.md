@@ -6,10 +6,12 @@ in Triangle class :
 Point pointA;
 
 in the spring.xml
- <bean id="pointA" class="Point">
+``` 
+<bean id="pointA" class="Point">
         <property name="x" value="0" />
         <property name="y" value="0" />
- </bean>
+</bean>
+```  
  
 then it can be used for autowiring.
 
