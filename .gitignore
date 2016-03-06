@@ -7,3 +7,4 @@ SpringProject.iml
 .idea/uiDesigner.xml
 .idea/libraries/Maven__commons_logging_commons_logging_1_2.xml
 .idea/workspace.xml
+*.iml
